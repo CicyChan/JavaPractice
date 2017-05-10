@@ -1,4 +1,6 @@
-package test.java.oo;
+package test.java.oo.testCase;
+
+import test.java.oo.Day;
 
 public class EnumTest {
 	

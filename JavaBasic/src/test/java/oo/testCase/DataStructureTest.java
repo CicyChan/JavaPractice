@@ -1,10 +1,10 @@
-package test.java.oo;
+package test.java.oo.testCase;
 
-public class DataStructure {
+public class DataStructureTest {
 	private final static int SIZE = 15;
 	private int[] arrayOfInt = new int[SIZE];
 	
-	public DataStructure(){
+	public DataStructureTest(){
 		for (int i=0 ; i< SIZE; i++){
 			arrayOfInt[i] = i;
 		}
@@ -39,7 +39,7 @@ public class DataStructure {
 	}
 	
 	public static void main(String[] args) {
-		DataStructure ds = new DataStructure();
+		DataStructureTest ds = new DataStructureTest();
 		ds.printEvent();
 	}
 }

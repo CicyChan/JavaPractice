@@ -1,6 +1,6 @@
-package test.java.oo;
+package test.java.oo.testCase;
 
-public class LocalClassExample {
+public class LocalClassExampleTest {
 	
 	public static String regularExpresstion = "[^0-9]";
 	
@@ -42,7 +42,7 @@ public class LocalClassExample {
 	}
 
 	public static void main(String[] args) {
-		LocalClassExample.validatePhoneNumber("123-456-7890", "456-7890");
+		LocalClassExampleTest.validatePhoneNumber("123-456-7890", "456-7890");
 	}
 
 }

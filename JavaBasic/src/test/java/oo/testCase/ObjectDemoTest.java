@@ -1,6 +1,9 @@
-package test.java.oo;
+package test.java.oo.testCase;
 
-public class ObjectDemo {
+import test.java.oo.Point;
+import test.java.oo.Rectangle;
+
+public class ObjectDemoTest {
 
 	public static void main(String[] args) {
 		Point originOne = new Point(23,94);

@@ -1,6 +1,6 @@
-package test.java.oo;
+package test.java.oo.testCase;
 
-public class ShadowClass {
+public class ShadowClassTest {
 	
 	public int x = 0;
 	
@@ -12,14 +12,14 @@ public class ShadowClass {
 			
 			System.out.println("this.x = " + this.x);
 			
-			System.out.println("ShadowClass.this.x = " + ShadowClass.this.x);
+			System.out.println("ShadowClass.this.x = " + ShadowClassTest.this.x);
 		} 
 	}
 
 	public static void main(String[] args) {
-		ShadowClass st = new ShadowClass();
+		ShadowClassTest st = new ShadowClassTest();
 		
-		ShadowClass.FirstLevel f1 = st.new FirstLevel();
+		ShadowClassTest.FirstLevel f1 = st.new FirstLevel();
 		f1.methodInFristLevel(23);
 
 	}
