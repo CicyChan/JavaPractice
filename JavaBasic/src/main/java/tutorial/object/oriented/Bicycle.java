@@ -1,29 +1,26 @@
-package test.java.oo;
+package tutorial.object.oriented;
 
 public class Bicycle {
-	
+
 	private int cadence;
 	private int gear;
 	private int speed;
 	private int id;
-	
-	
-	private static int numberOfBicycles = 0; 
 
-	public Bicycle(int startCadence, int startSpeed , int startGear) {
+	private static int numberOfBicycles = 0;
+
+	public Bicycle(int startCadence, int startSpeed, int startGear) {
 		this.cadence = startCadence;
 		this.speed = startSpeed;
 		this.gear = startGear;
-		
-		//increament numbe rof Bycles
-		 
+
 		this.id = ++Bicycle.numberOfBicycles;
 	}
-	
-	public static int getNumberofBycles(){
+
+	public static int getNumberofBycles() {
 		return Bicycle.numberOfBicycles;
 	}
-	
+
 	public int getId() {
 		return id;
 	}

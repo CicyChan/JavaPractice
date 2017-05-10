@@ -1,4 +1,4 @@
-package test.java.anotation;
+package tutorial.java.anotation;
 
 public class Book {
 	public String bookName;

@@ -1,17 +1,17 @@
-package test.java.oo.testCase;
+package tutorial.stub;
 
-import test.java.oo.Day;
+import tutorial.object.oriented.Day;
 
-public class EnumTest {
-	
+public class EnumStub {
+
 	public Day day;
 
-	public EnumTest(Day day) {
+	public EnumStub(Day day) {
 		this.day = day;
 	}
-	
-	public void tellTtLikeItIs(){
-		switch(day){
+
+	public void tellTtLikeItIs() {
+		switch (day) {
 		case MONDAY:
 			System.out.println("Monday are bad.");
 			break;
@@ -31,24 +31,7 @@ public class EnumTest {
 		case SUNDAY:
 			System.out.println("Weekend are best.");
 			break;
-			
+
 		}
 	}
-
-	public static void main(String[] args) {
-		EnumTest firstDay = new EnumTest(Day.MONDAY);
-		
-		firstDay.tellTtLikeItIs();
-		
-		EnumTest Thriday = new EnumTest(Day.WEDNESDAY);
-		
-		Thriday.tellTtLikeItIs();
-		
-		EnumTest seventhDay = new EnumTest(Day.SUNDAY);
-		
-		seventhDay.tellTtLikeItIs();
-		
-
-	}
-
 }

@@ -1,6 +1,6 @@
-package test.java.oo.testCase;
+package tutorial.object.oriented;
 
-public class AnonymousClassTest {
+public class AnonymousClass {
 	interface HelloWorld {
 		public void greet();
 
@@ -8,15 +8,6 @@ public class AnonymousClassTest {
 	}
 
 	public void sayHello() {
-
-		/*
-		 * class EnglishGreeting implements HelloWorld { String name = "world";
-		 * public void greet() { greetSomeone("world"); } public void
-		 * greetSomeone(String someone) { name = someone;
-		 * System.out.println("Hello " + name); } }
-		 */
-
-		// HelloWorld englishGreeting = new EnglishGreeting();
 
 		HelloWorld frenchGreeting = new HelloWorld() {
 			String name = "tout le monde";
@@ -47,10 +38,4 @@ public class AnonymousClassTest {
 		frenchGreeting.greetSomeone("Fred");
 		spanishGreeting.greet();
 	}
-
-	public static void main(String... args) {
-		AnonymousClassTest myApp = new AnonymousClassTest();
-		myApp.sayHello();
-	}
-
 }
