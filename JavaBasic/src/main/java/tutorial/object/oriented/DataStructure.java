@@ -38,9 +38,4 @@ public class DataStructure {
 			return retValue;
 		}
 	}
-
-	public static void main(String[] args) {
-		DataStructure ds = new DataStructure();
-		ds.printEvent();
-	}
 }
