@@ -1,6 +1,9 @@
 package tutorial.java.basic.test;
 
-import org.junit.Test;
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+import org.junit.Test;;
 
 public class ArrayTest {
 
@@ -33,5 +36,54 @@ public class ArrayTest {
 
 		System.out.println(testCopyTo);
 	}
+	
+	@Test
+	public void testListIteratorNext(){
+		
+		    ArrayList<String> aList = new ArrayList<String>();
+
+		    aList.add("1");
+		    aList.add("2");
+		    aList.add("3");
+		    aList.add("4");
+		    aList.add("5");
+
+		    ListIterator<String> listIterator = aList.listIterator();
+		    System.out.println("index: " + listIterator.previousIndex());
+
+		    // advance current position by one using next method
+		    System.out.println("listIterator.next() : " + listIterator.next());
+		    System.out.println("index: "+ listIterator.previousIndex());
+		    
+
+		    // advance current position by one using next method
+		    System.out.println("listIterator.next() : " + listIterator.next());
+		    System.out.println("index: " + listIterator.previousIndex());
+
+	}
+	
+	@Test
+	public void testListIteratorPrevious(){
+		
+	    ArrayList<String> aList = new ArrayList<String>();
+
+	    aList.add("1");
+	    aList.add("2");
+	    aList.add("3");
+	    aList.add("4");
+	    aList.add("5");
+
+	    ListIterator<String> listIterator = aList.listIterator(aList.size());
+	    System.out.println("index: " + listIterator.nextIndex());
+
+	    // advance current position by one using next method
+	    System.out.println("listIterator.previous(): " + listIterator.previous());
+	    System.out.println("inex: " + listIterator.nextIndex());
+	    
+	    // advance current position by one using next method
+	    System.out.println("listIterator.previous(): " + listIterator.previous());
+	    System.out.println("inex: " + listIterator.nextIndex());
+}
+
 
 }

@@ -20,6 +20,7 @@ public class EnumTest {
 		EnumStub seventhDay = new EnumStub(Day.SUNDAY);
 
 		seventhDay.tellTtLikeItIs();
+		
 	}
 
-}
+} 
